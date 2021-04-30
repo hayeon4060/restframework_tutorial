@@ -6,8 +6,17 @@ class MeetingCreateApi(generics.CreateAPIView):
     queryset = Meeting.objects.all()
     serializer_class = MeetingSerializer
 
+class MeetingApi(generics.ListAPIView):
+    queryset = Meeting.objects.all()
+    serializer_class = MeetingSerializer
 
-# class MeetingApi(generics.ListCreateAPIView):
-#     queryset = Meeting.objects.all()
-#     serializer_class = MeetingSerializer
+class MeetingUpdateApi(generics.RetrieveUpdateAPIView):
+    queryset = Meeting.objects.all()
+    serializer_class = MeetingSerializer
+
+class MeegingDeleteApi(generics.DestroyAPIView):
+    queryset = Meeting.objects.all()
+    serializer_class = MeetingSerializer
+
+
 
