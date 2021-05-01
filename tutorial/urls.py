@@ -11,7 +11,7 @@ from quickstart import views
 urlpatterns = [
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     # path('', include('snippets.urls')),
-    path('meeting/', include('meeting.urls')),
+    path('', include('meeting.urls')),
    
 ]
 

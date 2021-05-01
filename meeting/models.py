@@ -9,4 +9,4 @@ class Meeting(models.Model):
     parties = models.TextField()
     meeting_date = models.DateTimeField()
     date = models.DateTimeField(auto_now=True) #자동추가
-    # file = models.FileField(upload_to = u'talks/', max_length=200)
+    file = models.FileField(upload_to = u'audio/')
