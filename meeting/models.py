@@ -10,3 +10,9 @@ class Meeting(models.Model):
     meeting_date = models.DateTimeField()
     date = models.DateTimeField(auto_now=True) #자동추가
     file = models.FileField(upload_to = u'audio/')
+
+
+# class results(models.Model):
+#     script = models.TextField()
+#     # keyword = models.JSONField()
+#     summary = models.TextField()
